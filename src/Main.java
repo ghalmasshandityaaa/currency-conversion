@@ -43,28 +43,28 @@ public class Main {
 
         switch(choice) {
             case 1:
-                System.out.printf("Result : %.2f IDR = %.2f YEN%n", amount, yen.toYen(amount));
+                System.out.printf("Result : %s IDR = %s YEN%n", String.format("%,.2f", amount), String.format("%,.2f", yen.toYen(amount)));
                 break;
             case 2:
-                System.out.printf("Result : %.2f YEN = %.2f IDR%n", amount, yen.fromYen(amount));
+                System.out.printf("Result : %s YEN = %s IDR%n", String.format("%,.2f", amount), String.format("%,.2f", yen.fromYen(amount)));
                 break;
             case 3:
-                System.out.printf("Result : %.2f IDR = %.2f RINGGIT%n", amount, ringgit.toRinggit(amount));
+                System.out.printf("Result : %s IDR = %s RINGGIT%n", String.format("%,.2f", amount), String.format("%,.2f", ringgit.toRinggit(amount)));
                 break;
             case 4:
-                System.out.printf("Result : %.2f RINGGIT = %.2f IDR%n", amount, ringgit.fromRinggit(amount));
+                System.out.printf("Result : %s RINGGIT = %s IDR%n", String.format("%,.2f", amount), String.format("%,.2f", ringgit.fromRinggit(amount)));
                 break;
             case 5:
-                System.out.printf("Result : %.2f IDR = %.2f SGD%n", amount, sgd.toSgd(amount));
+                System.out.printf("Result : %s IDR = %s SGD%n", String.format("%,.2f", amount), String.format("%,.2f", sgd.toSgd(amount)));
                 break;
             case 6:
-                System.out.printf("Result : %.2f SGD = %.2f IDR%n", amount, sgd.fromSgd(amount));
+                System.out.printf("Result : %s SGD = %s IDR%n", String.format("%,.2f", amount), String.format("%,.2f", sgd.fromSgd(amount)));
                 break;
             case 7:
-                System.out.printf("Result : %.2f IDR = %.2f YUAN%n", amount, yuan.toYuan(amount));
+                System.out.printf("Result : %s IDR = %s YUAN%n", String.format("%,.2f", amount), String.format("%,.2f", yuan.toYuan(amount)));
                 break;
             case 8:
-                System.out.printf("Result : %.2f YUAN = %.2f IDR%n", amount, yuan.fromYuan(amount));
+                System.out.printf("Result : %s YUAN = %s IDR%n", String.format("%,.2f", amount), String.format("%,.2f", yuan.fromYuan(amount)));
                 break;
             default:
                 System.out.println("Thank you for using the currency converter app");
