@@ -21,10 +21,10 @@ public class Main {
         System.out.println(" Welcome to Currency Conversion Ghalmas ");
         System.out.println("========================================");
         System.out.println("Current currency rate");
-        System.out.printf("1 IDR = %-8f YEN%n", yen.getCurrency());
-        System.out.printf("1 IDR = %-8f RINGGIT%n", ringgit.getCurrency());
-        System.out.printf("1 IDR = %-8f SGD%n", sgd.getCurrency());
-        System.out.printf("1 IDR = %-8f YUAN%n", yuan.getCurrency());
+        System.out.printf("1 IDR = %-8.6f YEN%n", yen.getCurrency());
+        System.out.printf("1 IDR = %-8.6f RINGGIT%n", ringgit.getCurrency());
+        System.out.printf("1 IDR = %-8.6f SGD%n", sgd.getCurrency());
+        System.out.printf("1 IDR = %-8.6f YUAN%n", yuan.getCurrency());
         System.out.println("=========================================");
         System.out.printf("%-20s %20s%n","[1] IDR -> YEN","YEN -> IDR [2]");
         System.out.printf("%-20s %20s%n","[3] IDR -> RINGGIT","RINGGIT -> IDR [4]");
